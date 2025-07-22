@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'RockSalt';
+  src: url('./assets/fonts/RockSalt-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Saira';
+  src: url('./assets/fonts/Saira-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('./assets/fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "tailwindcss";
+
+:root {
+  --font-rocksalt: 'rocksalt', sans-serif;
+}
+
+body {
+  overflow: hidden;
+  background-image: url("../src/assets/image.jpg");
+  height: 100vh;
+  width: 100vw;
+}
+
+.perspective {
+  perspective: 1000px;
+}
+
+.transform-style {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
