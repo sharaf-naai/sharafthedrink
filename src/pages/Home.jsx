@@ -54,9 +54,28 @@ const Home = () => {
         opacity:0,
         ease:'sine.inOut'
       })
+      gsap.fromTo('.leftimg', {
+          y: 5,
+          delay: 2,
+      }, {
+        y: -5,
+        duration: 2,
+        repeat: -1,
+        yoyo: true,
+        ease: 'sine.inOut'
+      });
+      gsap.fromTo('.rightimg', {
+          y: 5,
+          delay: 2,
+      }, {
+        y: -5,
+        duration: 2,
+        repeat: -1,
+        yoyo: true,
+        ease: 'sine.inOut'
+      });
 
-      
-    },[]);
+    }, []);
 
   return (
     <div className="relative w-screen h-screen">
